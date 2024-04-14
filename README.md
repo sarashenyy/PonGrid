@@ -1,6 +1,15 @@
 # Probability on Grid
 simple code for computing probability on parameter grid and visualization
 
+## requirements
+- numpy
+- scipy
+- joblib
+- tqdm
+- multiprocessing
+- seaborn
+- matplotlib
+
 ## gaussian2D as an example
 ### step1. make gaussian2D data
 ```python
