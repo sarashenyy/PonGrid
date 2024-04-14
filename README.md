@@ -66,9 +66,9 @@ joblib.dump(joint_log_posterior, 'ex_gridpost_gaussian2D.joblib')
 ```
 
 ### step5. check log(posterior) values
-Because `np.exp()` can only maintain calculation accuracy in ==[-745, 705]==,
+Because `np.exp()` can only maintain calculation accuracy in **[-745, 705]**,
 we need to shift the log(posterior) value by adding a max number to the whole
-if they are smaller than ==-745==.
+if they are smaller than **-745**.
 The recommand shift value is 10.
 ```python
 joint_posterior, joint_posterior_shifted = pg.check_log_posterior(shift=True, shifted_to=10)
