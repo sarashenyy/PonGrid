@@ -107,8 +107,8 @@ class PonGrid(object):
         return joint_log_posterior
 
     def check_log_posterior(self,
-                             shift=True,
-                             shifted_to=10):
+                            shift=True,
+                            shifted_to=10):
         """
         check the log(posterior) value range and calculate posterior.
         Because np.exp() can only maintain calculation accuracy in [-745, 705],
@@ -149,12 +149,16 @@ class PonGrid(object):
             return joint_posterior
 
     def show_grid_probability(self,
-                         figpath,
-                         labels,
-                         truths=None):
-        if self.joint_posterior is None:
+                              figpath,
+                              labels,
+                              truths=None,
+                              joint_posterior=None):
+        if self.joint_posterior is None and joint_posterior is None:
             print('Please run pg.check_log_posterior() first to '
                   'ensure that the posterior value satisfies the calculation accuracy of np.exp()!!')
+        # if you want to draw the already exist posteriror grid, set your joint_posterior here
+        if joint_posterior is not None:
+            self.joint_posterior = joint_posterior
 
         num_subplot = len(self.joint_posterior.shape)
 
@@ -240,4 +244,3 @@ class PonGrid(object):
 
         plt.savefig(figpath, bbox_inches='tight')
         plt.close(fig)
-
