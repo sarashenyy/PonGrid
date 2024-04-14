@@ -1,16 +1,19 @@
 # PonGrid : Probability on Grid
 simple code for computing probability on parameter grid and visualization
 
-## requirements
+## Installation
+- github (latest) : `pip install -U git+git://github.com/sarashenyy/PonGrid`
+- pypi (stable): `pip install pongrid`
+
+## Requirements
 - numpy
 - scipy
-- joblib
 - tqdm
-- multiprocessing
 - seaborn
 - matplotlib
+- (joblib)
 
-## gaussian2D as an example
+## Gaussian2D as an example
 ### step1. make gaussian2D data
 ```python
 import numpy as np
