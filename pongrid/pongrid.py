@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
@@ -7,7 +8,10 @@ import seaborn as sns
 from matplotlib import gridspec
 from matplotlib.colors import ListedColormap
 
-plt.style.use('/Users/sara/PycharmProjects/starcat/data/mystyle.mplstyle')
+module_dir = os.path.dirname(__file__)
+style_file = os.path.join(module_dir, 'data/mystyle.mplstyle')
+
+plt.style.use(style_file)
 cmap = ListedColormap(sns.color_palette("RdBu_r", n_colors=256))
 
 
