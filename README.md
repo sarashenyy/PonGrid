@@ -1,5 +1,5 @@
 # PonGrid : Probability on Grid
-simple code for computing probability on parameter grid and visualization
+simple tool for computing probability on parameter grid and visualization
 
 ## Installation
 - github (latest) : `pip install -U git+git://github.com/sarashenyy/PonGrid`

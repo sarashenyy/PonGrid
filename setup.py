@@ -14,7 +14,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='pongrid',
-    version='0.0.0',
+    version='0.0.1',
     packages=find_packages(),
     url='https://github.com/sarashenyy/PonGrid',
     license='MIT',
