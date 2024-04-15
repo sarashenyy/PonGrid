@@ -68,7 +68,7 @@ pg = PonGrid(
 )
 ```
 
-### step4. run grid
+### step4. run grid using multiprocess
 Run grid using **multiprocess**, you can define the `processes` number you want to use.
 ```python
 joint_log_posterior = pg.run_grid(
