@@ -10,7 +10,7 @@ simple tool for computing probability on parameter grid and visualization
 - scipy
 - tqdm
 - seaborn
-- matplotlib
+- matplotlib >= 3.7.2
 - (joblib)
 
 ## Gaussian2D as an example
