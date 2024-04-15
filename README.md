@@ -1,9 +1,11 @@
 # PonGrid : Probability on Grid
+[![pypi package](https://img.shields.io/pypi/v/pongrid.svg)](https://pypi.org/project/pongrid/)
+
 simple tool for computing probability on parameter grid and visualization
 
 ## Installation
-- github (latest) : `pip install -U git+git://github.com/sarashenyy/PonGrid`
-- pypi (stable): `pip install pongrid`
+- [github (latest)](https://github.com/sarashenyy/PonGrid) : `pip install -U git+git://github.com/sarashenyy/PonGrid`
+- [PyPI (stable)](https://pypi.org/project/pongrid/): `pip install pongrid`
 
 ## Requirements
 - numpy
