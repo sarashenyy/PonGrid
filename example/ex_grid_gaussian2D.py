@@ -47,7 +47,8 @@ if __name__ == '__main__':
     )
 
     joint_log_posterior = pg.run_grid(
-        log_posterior=log_posterior)
+        log_posterior=log_posterior,
+        processes=None) # if processes in None, use ALL your CPUs
 
     # save joint_log_likelihood if needed
     joblib.dump(joint_log_posterior, 'ex_gridpost_gaussian2D.joblib')
